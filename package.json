@@ -1,0 +1,16 @@
+{
+  "name": "nodeblog",
+  "subdomain": "nodeblog",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.1-6",
+  "engines": {
+    "node": "v0.6.12"
+  },
+  "dependencies": {
+    "stylus": "0.24.0",
+    "coffeecup": "0.3.5-3",
+    "express": "2.5.8"
+  }
+}

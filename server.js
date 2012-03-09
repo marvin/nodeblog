@@ -1,13 +1,14 @@
-var app, express;
+(function() {
+  var app, express;
 
-express = require("express");
+  express = require("express");
 
-app = module.exports = express.createServer();
+  app = module.exports = express.createServer();
 
-require("./config/environment.js")(app, express);
+  require("./config/environment.js")(app, express);
 
-require("./config/routes.js")(app);
+  require("./config/routes.js")(app);
 
-app.listen(3000);
+  app.listen(3000);
 
-console.log("express server listen on port " + (app.address().port));
+}).call(this);
